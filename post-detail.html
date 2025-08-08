@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Detail - Viet K-Connect</title>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <header class="sticky-header">
+      <a href="index.html" class="header-logo-link"><h1>Viet K-Connect</h1></a>
+    </header>
+    <main class="main-content post-detail-page">
+      <button class="back-button" onclick="history.back()">← Back to Home</button>
+      <div class="post-content-card">
+        <h1>How to get a visa?</h1>
+        <p class="post-meta">Posted by User1 | 2025-07-30 | 150 Views</p>
+        <div class="post-body">
+          <p>This is a detailed description of how to apply for a visa to Korea. It includes information about required documents, application process, and common pitfalls to avoid.</p>
+          <p>Please note that visa requirements can change, so always check the official embassy website for the most up-to-date information.</p>
+        </div>
+      </div>
+      <section class="answers-section">
+        <h2>Answers</h2>
+        <div class="answer-list">
+          <div class="answer-card">
+            <p>You need to prepare your passport, application form, photos, and financial statements. Make sure to book an appointment in advance.</p>
+            <p class="post-meta">Answered by UserID123 (<span class="verified-info">비자 전문가 <svg class="verified-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></span>) | 2025-08-01<br><span>ABC 기업 근무, XYZ 대학 재직 중</span></p>
+          </div>
+          <div class="answer-card">
+            <p>Don't forget to check the specific visa type you need. Some visas require additional documents like an invitation letter.</p>
+            <p class="post-meta">Answered by UserID456 (<span class="verified-info">이민 전문가 <svg class="verified-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></span>) | 2025-08-02<br><span>DEF 법률사무소 근무</span></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="interaction-area">
+        <button id="register-question-button" class="icon-button" title="Register">
+          <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="#007bff" stroke-width="2" fill="none"/><path d="M12 8v4M12 16h.01" stroke="#007bff" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <button id="attach-file-button" class="icon-button" title="Attach">
+          <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M16.5 13.5V7a4.5 4.5 0 0 0-9 0v8a6 6 0 0 0 12 0V9" fill="none" stroke="#007bff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <textarea id="question-input" placeholder="Ask a question to a verified senior..."></textarea>
+        <button id="send-button" title="Send" class="icon-button">
+          <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><polygon points="2 21 23 12 2 3 6 12 2 21" fill="#007bff"/></svg>
+          <span class="visually-hidden">Send</span>
+        </button>
+      </div>
+      <p>&copy; 2025 Viet K-Connect. All rights reserved.</p>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

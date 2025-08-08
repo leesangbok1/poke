@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post List - Viet K-Connect</title>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <header class="sticky-header">
+      <a href="home.html" class="header-logo-link"><h1>Viet K-Connect</h1></a>
+    </header>
+    <main class="main-content post-list-page">
+      <button class="back-button" onclick="history.back()">← Back to Categories</button>
+      <h2 class="page-title">General Questions</h2>
+
+      <div class="post-list-container">
+        <div class="post-list-header">
+          <div class="post-list-title">Title</div>
+          <div class="post-list-author">Author</div>
+          <div class="post-list-likes">Likes</div>
+          <div class="post-list-views">Views</div>
+          <div class="post-list-date">Date</div>
+        </div>
+
+        <a href="post-detail.html" class="post-list-item">
+          <div class="post-list-title">How to get a visa?</div>
+          <div class="post-list-author">User1</div>
+          <div class="post-list-likes">15</div>
+          <div class="post-list-views">150</div>
+          <div class="post-list-date">2025-07-30</div>
+        </a>
+
+        <a href="post-detail.html" class="post-list-item">
+          <div class="post-list-title">Best restaurants in Ho Chi Minh City?</div>
+          <div class="post-list-author">User2</div>
+          <div class="post-list-likes">22</div>
+          <div class="post-list-views">230</div>
+          <div class="post-list-date">2025-07-28</div>
+        </a>
+
+        <a href="post-detail.html" class="post-list-item">
+          <div class="post-list-title">What are the requirements for a student visa?</div>
+          <div class="post-list-author">User3</div>
+          <div class="post-list-likes">8</div>
+          <div class="post-list-views">90</div>
+          <div class="post-list-date">2025-07-25</div>
+        </a>
+
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="interaction-area">
+        <button id="register-question-button" class="icon-button" title="Register">
+          <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="#007bff" stroke-width="2" fill="none"/><path d="M12 8v4M12 16h.01" stroke="#007bff" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <button id="attach-file-button" class="icon-button" title="Attach">
+          <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M16.5 13.5V7a4.5 4.5 0 0 0-9 0v8a6 6 0 0 0 12 0V9" fill="none" stroke="#007bff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <textarea id="question-input" placeholder="Ask a question to a verified senior..."></textarea>
+        <button id="send-button" title="Send" class="icon-button">
+          <svg class="icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><polygon points="2 21 23 12 2 3 6 12 2 21" fill="#007bff"/></svg>
+          <span class="visually-hidden">Send</span>
+        </button>
+      </div>
+      <p>&copy; 2025 Viet K-Connect. All rights reserved.</p>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
